@@ -59,7 +59,7 @@ public class EmailSender {
                     Message.RecipientType.TO,
                     InternetAddress.parse("ElEmailReceptor@gmail.com")
             );
-            message.setSubject("Campaña Publicitaria - Mark Stalker");
+            message.setSubject("Campaña Publicitaria - Mark");
             
             String html = ConfiguracioSMTP.enviarEmail();
             message.setContent(html, "text/html; charset=UTF-8");
